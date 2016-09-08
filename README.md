@@ -13,6 +13,15 @@ merge {
 }
 ```
 
+## Only merge new fields to root
+
+```
+merge {
+    field => "something"
+    overwrite => false
+}
+```
+
 ## Merge with custom target
 
 ```
@@ -22,7 +31,7 @@ merge {
 }
 ```
 
-## Merge with whitelisted keys
+## Merge only whitelisted keys
 
 ```
 merge {
